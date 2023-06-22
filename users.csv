@@ -1,0 +1,5 @@
+firstname,lastname,username,password,usergroup
+User,Apple,uapple,,13
+User,Ball,uball,,13
+User,Cat,ucat,Company@123,14
+User,Dog,udog,Company@123,14
