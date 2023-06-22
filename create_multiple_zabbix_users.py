@@ -1,5 +1,5 @@
+#Script to Create Multiple Users on Zabbix
 #Created by Mak Mahlawat for Python3
-
 #Needs the below 2 commands run on the zabbix-server before executing script 
 #yum install python3-pip -y
 #pip install requests
