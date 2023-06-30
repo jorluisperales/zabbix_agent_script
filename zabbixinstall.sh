@@ -8,7 +8,6 @@
 # Step 4 = Update Zabbix-Agent Config, Enable Service to auto start post Boot & Restart Zabbix-Agent
 # Step 5 = Installation Completion Greeting
 
-
 function editzabbixconf()
 {
 echo ========================================================================
