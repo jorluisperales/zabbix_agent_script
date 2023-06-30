@@ -28,8 +28,6 @@ rm -rvf /etc/zabbix
 }
 
 
-
-
 echo Starting Zabbix-Agent Removal Script
 echo ==========================================================
 
