@@ -72,6 +72,17 @@ fi
 
 echo Starting Zabbix-Agent Installation Script
 echo ========================================================================
+echo Step 1 = Determining OS Distribution Type
+
+if [[ $(cat /etc/*release*) == *"ubuntu"* ]];
+	then echo !! 1 !! OS Distribution determined as Ubuntu Linux
+	echo Step 2 = Determining OS Version ID now
+        version_id_ubuntu
+
+else echo :-/ Failed at Step 1 : We"'"re Sorry. This script cannot be used for zabbix-agent installation on this machine && exit 0
+fi
+
+
 
 #STEP 5
 echo ========================================================================
@@ -83,3 +94,4 @@ echo To check zabbix-agent service status, you may run : service zabbix-agent st
 echo To check zabbix-agent config, you may run : egrep -v '"^#|^$"' /etc/zabbix/zabbix_agentd.conf
 echo To check zabbix-agent logs, you may run : tail -f /var/log/zabbix/zabbix_agentd.log
 echo ========================================================================
+
