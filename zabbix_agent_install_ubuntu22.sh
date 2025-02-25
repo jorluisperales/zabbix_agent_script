@@ -16,7 +16,6 @@ echo ========================================================================
 mv /etc/zabbix/zabbix_agentd.conf /etc/zabbix/zabbix_agentd.conf.original
 cp /etc/zabbix/zabbix_agentd.conf.original /etc/zabbix/zabbix_agentd.conf	
 sed -i "s+Server=127.0.0.1+Server=MG-EC-UT-US-VM-ZABBIX-0001.xenetix.systems,MG-EC-UT-US-VM-ZABBIX-0002.xenetix.systems+g" /etc/zabbix/zabbix_agentd.conf
-sed -i "s+ServerActive=127.0.0.1+ServerActive=MG-EC-UT-US-VM-ZABBIX-0001.xenetix.systems,MG-EC-UT-US-VM-ZABBIX-0002.xenetix.systems+g" /etc/zabbix/zabbix_agentd.conf
 sed -i "s+Hostname=Zabbix server+Hostname=$(hostname -f)+g" /etc/zabbix/zabbix_agentd.conf
 sed -i "s+# Timeout=3+Timeout=30+g" /etc/zabbix/zabbix_agentd.conf
 
